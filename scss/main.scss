@@ -216,8 +216,34 @@
         font-size: 4rem;
       }
     }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.625rem;
 
-   /* font-weight: 500;
-    line-height: 48px;
-    letter-spacing: -0.8px;*/
+      @include breakpoint(medium) {
+        display: flex;
+        flex-direction: row;
+        padding: rem(0 90px);
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      max-width: rem(386px);
+      width: 100%;
+
+      &__content--title {
+        margin-top: rem(20px);
+        margin-bottom: rem(20px);
+      }
+      &__text {
+        text-align: center;
+      }
+    }
   }
