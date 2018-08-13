@@ -1,0 +1,223 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-height: rem(200px);
+  height: 100%;
+  margin: rem(0 24px);
+
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__icons {
+    margin-top: rem(35px);
+  }
+  &__logo {
+   /* height: rem(65px);
+    width: rem(121px);*/
+    margin-top: rem(40px);
+  }
+  &__active {
+    color: $black;
+    margin-top: rem(50px);
+    font-weight: 500;
+    line-height: rem(16px);
+    letter-spacing: rem(1.4px);
+    &_btn {
+      color: $blue;
+    }
+  }
+
+  .icons {
+    display: inline-block;
+  }
+  &__icons_social {
+    background: url("/img/social-sprit.png");
+    background-repeat: no-repeat;
+    width: rem(46px);
+    height: rem(46px);
+    margin-left: rem(12px);
+    &--twitter {
+      background-position-x: -52px;
+    }
+    &--telegram {
+      background-position-x: -104px;
+    }
+  }
+  & .button_small {
+    font-weight: bold;
+  }
+  &__href{
+    color: $black;
+    margin-right: rem(32px);
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem(118px);
+  &__title {
+    font-family: $gotham;
+    line-height: rem(100px);
+    letter-spacing: rem(-2.4px);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+
+    @include breakpoint(medium) {
+      font-size: 4rem;
+    }
+  }
+  &__subtitle {
+    font-family: $maisonNeue;
+    font-weight: 300;
+    line-height: rem(24px);
+    text-align: center;
+    margin-bottom: rem(48px);
+    padding: rem(0 26px);
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $gotham;
+  }
+  &__btn--blue {
+    margin-bottom: rem(16px);
+
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+      margin-right: rem(16px);
+    }
+  }
+
+  &__image {
+    height: 100%;
+    margin-top: rem(85px);
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    background: $blue;
+    font-family: $gotham;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: rem(84px);*/
+    margin-bottom: rem(145px);
+    padding: rem(0 26px);
+
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: rem(324px);
+      margin-top: rem(84px);
+
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+        &:not(:last-child) {
+          margin-right: rem(83px);
+        }
+      }
+    }
+    &--title {
+      letter-spacing: rem(-0.8px);
+      line-height: rem(48px);
+      color: $white;
+      margin: rem(16px 0);
+    }
+    &--text {
+      font-weight: 400;
+      line-height: rem(24px);
+      color: $white;
+      text-align: center;
+    }
+    &--icon {
+    }
+  }
+  .icon-encrypted {
+    background: url("/img/icon-1.png");
+    width: 5.5rem;
+    height: 6.1rem;
+
+  }
+  .icon-vault {
+    background: url("/img/icon-2.png");
+    width: 5.1rem;
+    height: 5.4rem;
+  }
+  .icon-profile {
+    background: url("/img/icon-3.png");
+    width: 6.6rem;
+    height: 5.2rem;
+  }
+}
+
+  .futures {
+    font-family: $gotham;
+
+    &__main-title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: rem(82px);
+    }
+
+      &__subtitle {
+        font-family: $maisonNeue;
+        color: $blue;
+        line-height: rem(14px);
+        letter-spacing: rem(2.29px);
+
+        @include breakpoint(medium) {
+          font-size: rem(16px)
+        }
+      }
+
+    &__title {
+      color: $black;
+      font-size: 2rem;
+      line-height: rem(100px);
+      letter-spacing: rem(-2.4px);
+      margin: 0;
+
+      @include breakpoint(medium) {
+        font-size: 4rem;
+      }
+    }
+
+   /* font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;*/
+  }
