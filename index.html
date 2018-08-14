@@ -17,13 +17,15 @@
           <a href="#" class="header__icons_social header__icons_social--telegram icons"></a>
         </div>
         <div class="header__logo">
-          <img src="./img/main-logo.png" alt="Ghost" class="header__logo_main-logo">
+          <a href="#">
+            <img src="./img/main-logo.png" alt="Ghost" class="header__logo_main-logo">
+          </a>
         </div>
         <div class="header__active">
-          <a href="#" class="header__href text_12 text_uppercase">
+          <a href="#" class="header__href text--12 text--uppercase">
             sign in
           </a>
-          <button class="button_small button_default text_12 text_uppercase">get early access</button>
+          <button class="button--small button--default text--12 text--uppercase">get early access</button>
         </div>
       </nav>
     </header>
@@ -32,30 +34,30 @@
     <section class="top">
       <div class="container">
 
-        <h1 class="top__title text_bold">Your Data’s in a Better Place</h1>
-        <div class="top__subtitle text_18">Blockchain data storage, encryption, and file sharing</div>
+        <h1 class="top__title text--bold">Your Data’s in a Better Place</h1>
+        <div class="top__subtitle text--18">Blockchain data storage, encryption, and file sharing</div>
 
         <div class="top__button">
-          <div class="top__btn top__btn--blue button button_primary text_uppercase">get early access</div>
-          <div class="top__btn top__btn--white button button_default text_uppercase">play video</div>
+          <button class="top__btn top__btn--blue button button--primary text--uppercase">get early access</button>
+          <button class="top__btn top__btn--white button button--default text--uppercase">play video</button>
         </div>
 
         <div class="top__image">
           <img src="/img/top-pic.png" alt="top pic">
         </div>
 
-        <div class="top__description">
+        <div class="top__description ">
           <div class="top__description--container">
             <div class="top__description--icon icon-encrypted"></div>
-            <div class="top__description--title text_24 text_bold">Encrypted</div>
-            <div class="top__description--text text_14">Ghost Drive uses a combination of hashing algorithms, ECDSA, and FUSE-based file system and data compression to encrypt your data before atomizing it into thousands of fragments stored on different servers.
+            <div class="top__description--title text--24 text--bold">Encrypted</div>
+            <div class="top__description--text text--14">Ghost Drive uses a combination of hashing algorithms, ECDSA, and FUSE-based file system and data compression to encrypt your data before atomizing it into thousands of fragments stored on different servers.
             </div>
           </div>
 
           <div class="top__description--container">
             <div class="top__description--icon icon-vault"></div>
-            <div class="top__description--title text_24 text_bold">Personal Vault</div>
-            <div class="top__description--text text_14">
+            <div class="top__description--title text--24 text--bold">Personal Vault</div>
+            <div class="top__description--text text--14">
               Passwords, records, documents, finances — Ghost Drive is a secure, digital vault that keeps your private information private.
               No one —  including us! — can gain access to your data unless you grant it.
             </div>
@@ -63,8 +65,8 @@
 
           <div class="top__description--container">
             <div class="top__description--icon icon-profile"></div>
-            <div class="top__description--title text_24 text_bold">Anonymous Profile</div>
-            <div class="top__description--text text_14">
+            <div class="top__description--title text--24 text--bold">Anonymous Profile</div>
+            <div class="top__description--text text--14">
               What good is having a safe place to store and share files if your user profile is publicly broadcast? Ghost Drive allows users to maintain anonymity by working behind randomly generated public IDs that encrypt each session.
             </div>
           </div>
@@ -73,28 +75,31 @@
       </div>
     </section>
 
+  <!--  <svg class="test">
+      <use xlink:href="#bannerbg"></use>
+    </svg>-->
 
     <section class="futures">
       <div class="container">
 
         <div class="futures__main-title">
-          <div class="futures__subtitle text_bold text_uppercase">ghostdrive</div>
-          <h1 class="futures__title text_bold">Features</h1>
+          <div class="futures__subtitle text--bold text--uppercase">ghostdrive</div>
+          <h1 class="futures__title text--bold">Features</h1>
         </div>
 
           <div class="futures__content">
-            <div class="futures__container">
+            <div class="futures__container futures__container--mobile left">
               <div class="futures__icon icon-geom1"></div>
-              <div class="futures__content--title text_24 text_bold">Ghost Time</div>
-              <div class="futures__text text_14">
+              <div class="futures__content--title text--24 text--bold">Ghost Time</div>
+              <div class="futures__text text--14">
                 You know when they say “This message will self destruct”? Well Ghost Drive allows you to add an expiration clock to anything you share so that when the time is up, the lock resets and no one but you can access it again.
               </div>
             </div>
 
-            <div class="futures__container">
+            <div class="futures__container futures__container--mobile right">
               <div class="futures__icon icon-geom2"></div>
-              <div class="futures__content--title text_24 text_bold">Crypto Wallet</div>
-              <div class="futures__text text_14">
+              <div class="futures__content--title text--24 text--bold">Crypto Wallet</div>
+              <div class="futures__text text--14">
                 Tired of keeping cold storage? So were we, which
                 is why we made the safest digital wallet that’s ever existed to store and trade cryptocurrencies with
                 ease of mind.
@@ -103,25 +108,161 @@
           </div>
 
           <div class="futures__content">
-            <div class="futures__container">
+            <div class="futures__container futures__container--mobile left">
               <div class="futures__icon icon-geom3"></div>
-              <div class="futures__content--title text_24 text_bold">Time Capsule</div>
-              <div class="futures__text text_14">
+              <div class="futures__content--title text--24 text--bold">Time Capsule</div>
+              <div class="futures__text text--14">
                 For an added layer of security, the Ghost Drive time capsule locks files with a smart contract, hiding data from everyone, even you, until a designated time
                 in the future.
               </div>
             </div>
 
-            <div class="futures__container">
+            <div class="futures__container futures__container--mobile right">
               <div class="futures__icon icon-geom4"></div>
-              <div class="futures__content--title text_24 text_bold">Blockchain With Shards</div>
-              <div class="futures__text text_14">
+              <div class="futures__content--title text--24 text--bold">Blockchain With Shards</div>
+              <div class="futures__text text--14">
                 Ghost Drive uses blockchain and sharding technology to ensure that once a user uploads data it remains invisible and can only be unlocked with a private key, which cannot be duplicated, forged, or hacked.
               </div>
             </div>
           </div>
 
         </div>
+    </section>
+
+
+    <section class="file">
+      <div class="container">
+        <div class="file__container">
+        <div class="file__info">
+          <div class="file__links">
+            <a href="#">
+              <span class="file__links--active text--14 text--uppercase">point 01</span>
+            </a>
+            <a href="#">
+              <span class="file__links--disable">03</span>
+            </a>
+          </div>
+
+          <div class="file__title text--bold">
+            <!--<div class="a">Upload </div>
+            <div class="a1">Your File</div>-->
+            Upload Your File
+          </div>
+
+          <span class="file__line"></span>
+
+          <div class="file__text text--18">
+            For an added layer of security, the Ghost Drive time capsule locks files with a smart contract, hiding data from everyone, even you, until
+            a designated time in the future.
+          </div>
+        </div>
+
+        <div class="file__img">
+          <img src="/img/file-pic.png" alt="file" class="file__pic">
+        </div>
+        </div>
+
+        <div class="file__container">
+          <div class="file__info">
+            <div class="file__links">
+              <a href="#">
+                <span class="file__links--active text--14 text--uppercase">point 02</span>
+              </a>
+              <a href="#">
+                <span class="file__links--disable">03</span>
+              </a>
+            </div>
+
+            <div class="file__title text--bold">
+              File Atomization
+            </div>
+
+            <span class="file__line"></span>
+
+            <div class="file__text text--18">
+              For an added layer of security, the Ghost Drive time capsule locks files with a smart contract, hiding data from everyone, even you, until
+              a designated time in the future.
+            </div>
+          </div>
+
+          <div class="file__img">
+            <img src="/img/file-pic.png" alt="file" class="file__pic">
+          </div>
+        </div>
+
+        <div class="file__container">
+          <div class="file__info">
+            <div class="file__links">
+              <a href="#">
+                <span class="file__links--active text--14 text--uppercase">point 03</span>
+              </a>
+              <a href="#">
+                <span class="file__links--disable">03</span>
+              </a>
+            </div>
+
+            <div class="file__title text--bold">
+              Add Security
+            </div>
+
+            <span class="file__line"></span>
+
+            <div class="file__text text--18">
+              For an added layer of security, the Ghost Drive time capsule locks files with a smart contract, hiding data from everyone, even you, until
+              a designated time in the future.
+            </div>
+          </div>
+
+          <div class="file__img">
+            <img src="/img/file-pic.png" alt="file" class="file__pic">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="technologies">
+
+      <div class="technologies__top">
+        <div class="technologies__subtitle text--16 text--uppercase">ghostdrive</div>
+        <div class="technologies__title text--bold">Technologies</div>
+      </div>
+
+      <div class="technologies__container container">
+
+        <div class="technologies__block">
+          <div class="technologies__img">
+            <img src="/img/icon-geom-5.png" alt="icon">
+          </div>
+          <div class="technologies__name text--24 text--bold">Ghost Authenticator</div>
+          <div class="technologies__text text--14">
+            Our two-factor authentication takes security to the next level by using a decentralized blockchain to generate
+            a time stamped encrypted pin, which cannot
+            be duplicated.
+          </div>
+        </div>
+
+        <div class="technologies__block">
+          <div class="technologies__img">
+            <img src="/img/icon-geom-6.png" alt="icon">
+          </div>
+          <div class="technologies__name text--24 text--bold">Ghost Notes</div>
+          <div class="technologies__text text--14">
+            Finally! A place where you can keep sensitive information online that you can access and edit from anywhere, while resting easy knowing that your information is safe. Ghost Notes is like writing things in invisible ink that only you can see.
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="technologies__actions">
+        <div class="technologies__title technologies__title--bottom text--bold">Your Data’s in a Better Place</div>
+        <div class="technologies__text--small text--18">125K+ users already subscribed</div>
+        <button class="technologies__btn button button--default text--uppercase">get early access</button>
+      </div>
+
     </section>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
