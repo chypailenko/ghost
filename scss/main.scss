@@ -15,20 +15,34 @@
 
   &__icons {
     margin-top: rem(35px);
+    @include breakpoint(medium) {
+      margin-top: 0;
+      max-width: rem(302px);
+      width: 100%;
+    }
   }
   &__logo {
-   /* height: rem(65px);
-    width: rem(121px);*/
     margin-top: rem(40px);
+    @include breakpoint(medium) {
+      margin-top: rem(16px);
+    }
   }
   &__active {
     color: $black;
     margin-top: rem(50px);
-    font-weight: 500;
     line-height: rem(16px);
     letter-spacing: rem(1.4px);
     &_btn {
       color: $blue;
+    }
+
+    @include breakpoint(medium) {
+      margin-top: 0;
+      max-width: rem(302px);
+      width: 100%;
+      display: flex;
+      align-items: center;
+
     }
   }
 
@@ -57,20 +71,23 @@
   }
 }
 
+
+
+// ========== SECTION TOP ==========
 .top {
-  background: url("/img/technologiesBg.svg") no-repeat bottom;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-top: rem(118px);
-  /*background: $blue;*/
+  background: url("/img/technologiesBg.svg") no-repeat bottom;
+  background-size: cover;
   margin-bottom: rem(145px);
   &__title {
     font-family: $gotham;
     line-height: rem(100px);
-    letter-spacing: rem(-2.4px);
-    font-size: 2rem;
+    letter-spacing: 0.01rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-bottom: 0;
 
@@ -79,7 +96,8 @@
     }
   }
   &__subtitle {
-    font-family: $maisonNeue;
+    font-family: $gotham;
+    color: $gray;
     font-weight: 300;
     line-height: rem(24px);
     text-align: center;
@@ -115,7 +133,6 @@
   }
 
   &__image {
-    /*background: url("/img/technologiesBg.svg") no-repeat;*/
     height: 100%;
     margin-top: rem(85px);
     & > img {
@@ -129,8 +146,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: rem(84px);*/
-    /*margin-bottom: rem(145px);*/
     padding: rem(0 26px);
 
     @include breakpoint(medium) {
@@ -188,6 +203,10 @@
   }
 }
 
+
+
+
+// ========== SECTION FUTURES ==========
   .futures {
     font-family: $gotham;
 
@@ -199,7 +218,7 @@
     }
 
     &__subtitle {
-      font-family: $maisonNeue;
+      font-family: $gotham;
       color: $blue;
       line-height: rem(14px);
       letter-spacing: rem(2.29px);
@@ -213,7 +232,7 @@
       color: $black;
       font-size: 2rem;
       line-height: rem(100px);
-      letter-spacing: rem(-2.4px);
+      letter-spacing: 0.01rem;
       margin: 0;
 
       @include breakpoint(medium) {
@@ -228,7 +247,7 @@
       padding: 0 1.625rem;
 
       &:not(:last-child) {
-        margin-top: rem(82px);
+       /* margin-top: rem(82px);*/
       }
 
       @include breakpoint(medium) {
@@ -237,6 +256,9 @@
         padding: rem(0 90px);
         margin: rem(72px 0 120px 0);
         /*margin-bottom: rem(190px);*/
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(218, 221, 223, 0.3);
+        }
       }
     }
     &__container {
@@ -249,22 +271,20 @@
 
       &--mobile {
         margin-bottom: rem(82px);
-
-        @include breakpoint(medium) {
-          margin-bottom: 0;
-          &:not(:last-child) {
-            border-right: 1px solid $lightgray;
-          }
-        }
+      }
+      @include breakpoint(medium) {
+        border-right: 1px solid rgba(218,221,223,0.3)
       }
     }
     &__content--title {
-      margin-top: rem(20px);
-      margin-bottom: rem(20px);
+      margin-top: rem(25px);
+      margin-bottom: rem(25px);
       text-align: center;
     }
     &__text {
       text-align: center;
+      color: $gray;
+      line-height: 24px;
     }
 
     .icon-geom1 {
@@ -280,12 +300,12 @@
     .icon-geom3 {
       background: url("/img/icon-geom-3.png");
       width: 6.4rem;
-      height: 6.5625rem;
+      height: 6.5rem;
     }
     .icon-geom4 {
       background: url("/img/icon-geom-4.png");
       width: 6.3rem;
-      height: 7.4rem;
+      height: 7.5rem;
     }
 
     .left {
@@ -302,7 +322,7 @@
   }
 
 
-
+// ============ SECTION FILE ==========
     .file {
         display: flex;
         flex-direction: column;
@@ -319,7 +339,7 @@
         @include breakpoint(medium) {
           display: flex;
           align-items: center;
-          margin: rem(202px 0);
+          /*margin: rem(202px 0);*/
         }
       }
       &__info {
@@ -339,8 +359,8 @@
         margin: rem(31px 0);
       }
       &__links {
-        font-family: $maisonNeue;
-        font-weight: 700;
+        font-family: $gotham;
+        font-weight: bold;
         line-height: rem(16px);
         letter-spacing: rem(2px);
         margin-bottom: rem(24px);
@@ -348,6 +368,7 @@
 
         & a {
           color: $gray;
+          opacity: 0.6;
           &:hover {
             color: $blue;
           }
@@ -365,19 +386,18 @@
       }
       &__title {
         line-height: rem(80px);
-        letter-spacing: rem(-2.4px);
+        letter-spacing: 0.01rem;
         font-size: 2rem;
-        text-align: center;
 
         @include breakpoint(medium) {
           font-size: 4rem;
-          width: rem(266px);
+          width: 250px;
           text-align: inherit;
         }
       }
     &__text {
       color: $gray;
-      font-family: $maisonNeue;
+      font-family: $gotham;
       font-weight: 300;
       line-height: rem(32px);
     }
@@ -398,10 +418,9 @@
     }
 
 
-
+// ========== SECTION TECHNOLOGIES ===========
     .technologies {
-        background: $blue;
-     /* background: url("/img/technologiesBg.svg") no-repeat bottom;*/
+      background: $blue;
       &__top {
         display: flex;
         flex-direction: column;
@@ -409,21 +428,28 @@
         padding-top: rem(116px);
         padding-bottom: rem(43px);
       }
+      &__background--img {
+        background: url("/img/bannerBg.svg") no-repeat top;
+        background-size: cover;
+      }
+      &__background {
+      }
       &__subtitle {
           opacity: 0.5;
           color: $white;
-          font-family: $maisonNeue;
-          font-weight: 700;
+          font-family: $gotham;
+          font-weight: bold;
           line-height: rem(16px);
           letter-spacing: rem(2.29px);
+          padding-bottom: rem(10px);
         }
       &__title {
         color: $white;
         font-family: $gotham;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: bold;
         line-height: rem(100px);
-        letter-spacing: rem(-2.4px);
+        letter-spacing: 0.01rem;
         text-align: center;
 
         @include breakpoint(medium) {
@@ -440,6 +466,7 @@
         @include breakpoint(medium) {
           display: flex;
           flex-direction: row;
+
         }
       }
       &__block {
@@ -451,7 +478,12 @@
         padding-bottom: rem(40px);
 
         @include breakpoint(medium) {
-          padding: rem(93px 106px);
+          padding: rem(76px 109px);
+          max-width: 579px;
+          width: 100%;
+          &:not(:last-child) {
+            border-right: 1px solid $lightgray;
+          }
         }
       }
 
@@ -468,9 +500,9 @@
       &__name {
         color: $black;
         font-family: $gotham;
-        font-weight: 500;
         line-height: rem(48px);
         letter-spacing: rem(-0.8px);
+        text-align: center;
       }
 
       &__title--bottom {
@@ -479,12 +511,14 @@
         @include breakpoint(medium) {
           margin-top: rem(304px);
           line-height: 6.25rem;
+          max-width: 400px;
+          width: 100%;
 
         }
       }
       &__text {
         color: $gray;
-        font-family: $maisonNeue;
+        font-family: $gotham;
         font-weight: 300;
         line-height: rem(24px);
         text-align: center;
@@ -496,12 +530,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 1.625rem;
-        /*background: url("/img/technologiesBg.svg") no-repeat;*/
       }
       &__text--small {
         opacity: 0.8;
         color: $white;
-        font-family: $maisonNeue;
+        font-family: $gotham;
         font-weight: 300;
         line-height: rem(24px);
         margin-bottom: rem(50px);
