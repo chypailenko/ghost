@@ -50,7 +50,7 @@
     display: inline-block;
   }
   &__icons_social {
-    background: url("/img/social-sprit.png");
+    background: url("./img/social-sprit.png");
     background-repeat: no-repeat;
     width: rem(46px);
     height: rem(46px);
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: rem(118px);
-  background: url("/img/technologiesBg.svg") no-repeat bottom;
+  background: url("./img/technologiesBg.svg") no-repeat bottom;
   background-size: cover;
   padding-bottom: rem(145px);
   &__title {
@@ -186,18 +186,18 @@
   }
 
   .icon-encrypted {
-    background: url("/img/icon-1.png");
+    background: url("./img/icon-1.png");
     width: 5.5rem;
     height: 6.1rem;
 
   }
   .icon-vault {
-    background: url("/img/icon-2.png");
+    background: url("./img/icon-2.png");
     width: 5.1rem;
     height: 5.4rem;
   }
   .icon-profile {
-    background: url("/img/icon-3.png");
+    background: url("./img/icon-3.png");
     width: 6.6rem;
     height: 5.2rem;
   }
@@ -289,22 +289,22 @@
     }
 
     .icon-geom1 {
-      background: url("/img/icon-geom-1.png");
+      background: url("./img/icon-geom-1.png");
       width: 7rem;
       height: 6.8rem;
     }
     .icon-geom2 {
-      background: url("/img/icon-geom-2.png");
+      background: url("./img/icon-geom-2.png");
       width: 6.4rem;
       height: 7.5rem;
     }
     .icon-geom3 {
-      background: url("/img/icon-geom-3.png");
+      background: url("./img/icon-geom-3.png");
       width: 6.4rem;
       height: 6.5rem;
     }
     .icon-geom4 {
-      background: url("/img/icon-geom-4.png");
+      background: url("./img/icon-geom-4.png");
       width: 6.3rem;
       height: 7.5rem;
     }
@@ -430,7 +430,7 @@
         padding-bottom: rem(43px);
       }
       &__background--img {
-        background: url("/img/bannerBg.svg") no-repeat top;
+        background: url("./img/bannerBg.svg") no-repeat top;
         background-size: cover;
       }
       &__background {
