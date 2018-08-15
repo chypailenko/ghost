@@ -82,7 +82,7 @@
   margin-top: rem(118px);
   background: url("/img/technologiesBg.svg") no-repeat bottom;
   background-size: cover;
-  margin-bottom: rem(145px);
+  padding-bottom: rem(145px);
   &__title {
     font-family: $gotham;
     line-height: rem(100px);
@@ -214,6 +214,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+      margin-top: rem(116px);
       /*margin-bottom: rem(82px);*/
     }
 
