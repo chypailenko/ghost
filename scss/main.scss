@@ -80,9 +80,9 @@
   align-items: center;
   justify-content: space-between;
   margin-top: rem(118px);
-  background: url("/img/technologiesBg.svg") no-repeat bottom;
-  background-size: cover;
-  padding-bottom: rem(145px);
+  /*background: url("/img/technologiesBg.svg") no-repeat bottom;
+  background-size: cover;*/
+  /*padding-bottom: rem(145px);*/
   &__title {
     font-family: $gotham;
     line-height: rem(100px);
@@ -139,68 +139,87 @@
       width: 100%;
     }
   }
-  &__description {
-    background: $blue;
-    font-family: $gotham;
-    color: $white;
+}
+
+.second {
+  background: $blue;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -87px;
+    height: 333px;
+    z-index: 1;
+    background: url(/img/technologiesBg.svg) no-repeat;
+    background-size: contain;
+  }
+
+}
+
+.description {
+  background: $blue;
+  font-family: $gotham;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(0 26px);
+  margin-top: -109px;
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 642px;
+    margin-top: -190px;
+  }
+
+  &--container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: rem(0 26px);
+    justify-content: space-between;
+    width: rem(324px);
+    margin-top: rem(84px);
+    z-index: 10;
 
     @include breakpoint(medium) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    &--container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      width: rem(324px);
-      margin-top: rem(84px);
-
-      @include breakpoint(medium) {
-        margin-bottom: 0;
-        &:not(:last-child) {
-          margin-right: rem(83px);
-        }
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-right: rem(83px);
       }
     }
-    &--title {
-      letter-spacing: rem(-0.8px);
-      line-height: rem(48px);
-      color: $white;
-      margin: rem(16px 0);
-    }
-    &--text {
-      font-weight: 400;
-      line-height: rem(24px);
-      color: $white;
-      text-align: center;
-    }
-    &--icon {
-    }
   }
+  &--title {
+    letter-spacing: rem(-0.8px);
+    line-height: rem(48px);
+    color: $white;
+    margin: rem(16px 0);
+  }
+  &--text {
+    font-weight: 400;
+    line-height: rem(24px);
+    color: $white;
+    text-align: center;
+  }
+}
 
-  .icon-encrypted {
-    background: url("/img/icon-1.png");
-    width: 5.5rem;
-    height: 6.1rem;
+.icon-encrypted {
+  background: url("/img/icon-1.png");
+  width: 5.5rem;
+  height: 6.1rem;
 
-  }
-  .icon-vault {
-    background: url("/img/icon-2.png");
-    width: 5.1rem;
-    height: 5.4rem;
-  }
-  .icon-profile {
-    background: url("/img/icon-3.png");
-    width: 6.6rem;
-    height: 5.2rem;
-  }
+}
+.icon-vault {
+  background: url("/img/icon-2.png");
+  width: 5.1rem;
+  height: 5.4rem;
+}
+.icon-profile {
+  background: url("/img/icon-3.png");
+  width: 6.6rem;
+  height: 5.2rem;
 }
 
 
