@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="animate.css">
+<!--    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">-->
+
   </head>
   <body>
 
@@ -52,14 +56,14 @@
       <div class="container">
 
       <div class="description">
-        <div class="description--container">
+        <div class="description--container wow bounceInLeft">
           <div class="description--icon icon-encrypted"></div>
           <div class="description--title text--24 text--bold">Encrypted</div>
           <div class="description--text text--14">Ghost Drive uses a combination of hashing algorithms, ECDSA, and FUSE-based file system and data compression to encrypt your data before atomizing it into thousands of fragments stored on different servers.
           </div>
         </div>
 
-        <div class="description--container">
+        <div class="description--container wow bounceInLeft">
           <div class="description--icon icon-vault"></div>
           <div class="description--title text--24 text--bold">Personal Vault</div>
           <div class="description--text text--14">
@@ -68,7 +72,7 @@
           </div>
         </div>
 
-        <div class="description--container">
+        <div class="description--container wow bounceInLeft">
           <div class="description--icon icon-profile"></div>
           <div class="description--title text--24 text--bold">Anonymous Profile</div>
           <div class="description--text text--14">
@@ -163,7 +167,7 @@
         </div>
 
         <div class="file__img">
-          <img src="/img/file-pic.png" alt="file" class="file__pic">
+          <img src="/img/file-pic.png" alt="file" class="file__pic wow bounceInRight">
         </div>
         </div>
 
@@ -191,7 +195,7 @@
           </div>
 
           <div class="file__img">
-            <img src="/img/file-pic.png" alt="file" class="file__pic">
+            <img src="/img/file-pic.png" alt="file" class="file__pic wow bounceInRight">
           </div>
         </div>
 
@@ -218,7 +222,7 @@
           </div>
 
           <div class="file__img">
-            <img src="/img/file-pic.png" alt="file" class="file__pic">
+            <img src="/img/file-pic.png" alt="file" class="file__pic wow bounceInRight">
           </div>
         </div>
 
@@ -270,6 +274,12 @@
       </div>
 
     </section>
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
